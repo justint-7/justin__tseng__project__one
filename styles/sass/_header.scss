@@ -1,0 +1,91 @@
+//This sass file contains the header styling of all three pages.
+
+
+h1{
+    font-size: 2.3rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.055rem;
+}
+
+//Each header is set to cover and then individually assigned their background image (and height);
+header{
+    background-size: cover;
+    max-height: 625px; 
+}
+.home__header{
+    background-image: url(../assets/home-1.jpeg);
+    height: 70vh;
+}
+
+.blog__header{
+    background-image: url(../assets/blog-1.jpeg);
+    height: 50vh;
+}
+
+.contact__header{
+    background-image: url(../assets/contact-1.jpeg);
+    height: 50vh;
+}
+
+//the flex parents found in the header
+.header__nav,
+.header__list{
+display:flex;
+}
+
+//setting the width of the navigation containers so that the space is distributed according to the design
+h1,
+.header__list{
+    width:50%;
+    margin: 2.5%;
+}
+
+//nav styling
+.header__list{
+    list-style-type: none;
+    font-size: 0.6rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.025rem;    
+    justify-content: space-between;
+    margin-left: 0;
+}
+
+//make the home button green
+.home{
+    color: $medium__green;
+}
+
+//This relative position allows the following code to set position absolute and anchor the notification number to the bag
+.shop a{
+    position: relative;
+}
+
+//Circular green notification alert positioned on the bag
+.notification{
+    background-color: $medium__green;
+    border-radius: 50%;
+    position: absolute;
+    padding:0;
+    margin:0;
+    width: 0.5rem;
+    height: 0.5rem;
+    bottom: -20%;
+    right: 0;
+}
+
+//The number of the notification
+.notification p{
+    color: #f6f6f6;
+    top: 0;
+    margin: 0;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    font-family: 'Raleway';
+    text-align: center;
+}
+
+
+//This hides the hamburger placeholder for a possible dropdown menu when in mobile design
+.hamburger{
+    display: none;
+  }

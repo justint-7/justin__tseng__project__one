@@ -1,0 +1,167 @@
+//This sass file contains footer styling for all 3 pages
+
+footer{
+    background-color:#333333;
+}
+
+//Wrapper for full bleed effect of footer background
+.footer__wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+//The flex parents found in the footer
+.footer__flex__parent,
+.footer__container,
+.social__container,
+form,
+.footer__arrow__container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.footer__flex__parent,
+.social__container,
+form{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+//set the footer containers to be 1/3 of the total parent's width each
+.footer__container{
+    width: calc(100% / 3);
+    padding: 0 5%;
+}
+
+//text styling and positioning with padding and margins
+h4,
+h5{
+    font-size: 1.75rem;
+    color:$medium__green;
+    line-height: 1.2rem;
+    letter-spacing: 0.025rem;
+    margin: 0;
+}
+
+h5{
+    font-size: 0.9rem;
+    color: #F6F6F6;
+}
+
+footer ul,
+footer ul li p{
+    padding-left: 0;
+}
+
+footer ul li,
+footer p{
+    font-size: 0.55rem;
+    color:#999999;
+    line-height: 1rem;
+    margin: 0;
+    font-family: 'Lora';
+    text-align: left;
+}
+
+footer ul li{
+    padding: 5% 0;
+}
+
+//This border attached to the li element in the footer creates the divider line seen in the design
+footer ul li{
+    border-bottom: 1px solid #474747;
+}
+
+//There is no divider line for the last child in each ul
+footer ul li:last-child{
+    border-bottom: none;
+}
+
+.footer__container__3 h5{
+    margin-bottom: 15%;
+}
+
+.footer__container__3 p{
+    margin-bottom: 10%;
+}
+
+form{
+    height: 15%;
+    padding:0;
+}
+
+//email field styling
+footer input[type=email]{
+    background-color:#696969;
+    border: none;
+    width: calc((100% / 6) * 5);
+    padding-left: 10%;
+}
+
+//submit button styling
+footer input[type=submit]{
+    background-color: $medium__green;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.email::placeholder{
+    font-size: 0.5rem;
+    font-family: 'Lora';
+    font-style: italic;
+    color:#F6F6F6;
+}
+
+//this container is suprimposed on top of the submit button and set to position relative
+.submit__container{
+    position: relative;
+    width: calc(100% / 6);
+}
+
+//This arrow can now attach itself onto the submit button using the superimposed container and use flexbox to center itself 
+.footer__arrow__container{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__arrow__container i{
+    font-size: 0.75rem;
+    color: #F6F6F6;
+}
+
+.social__container{
+    justify-content: start;
+}
+
+.social__container a{
+    color: #F6F6F6;
+    padding: 0 2.5%;
+}
+
+.social__container a:first-child{
+    padding-left: 0;
+}
+
+.copyright{
+    background-color: #1d1d1d;
+    padding: 1% 5%;
+    width: 100%;
+}
+.copyright p{
+    margin-left: 10%;
+}
+
+.copyright span{
+    color:$medium__green;
+}
+
+
+

@@ -1,0 +1,146 @@
+//this sass file contains the media queries that make the pages responsive
+
+@media (max-width: 1035px){
+    //Since all of the text sizes in the pages are inputed as rems, most minor breakpoints will adjust the html fontsize
+    html{
+        font-size: 90%;
+    }
+    //Gradually lower header size since on small screens the max-height set in the header sass will not have any effect
+    .home__header,
+    .blog__header,
+    .contact__header{
+        height:50vh;
+    }
+}
+
+@media (max-width: 745px){
+    html{
+        font-size: 80%;
+    }
+    .home__header,
+    .blog__header,
+    .contact__header{
+        height:40vh;
+    }
+    //make the underlines found after h2s of index.html a little less thick
+    .underline{
+        border-bottom: 3px solid $medium__green;
+    }
+}
+
+@media (max-width: 665px){
+    html{
+        font-size: 70%;
+    }
+    .home__header,
+    .blog__header,
+    .contact__header{
+        height:30vh;
+    }
+}
+
+@media (max-width: 580px){
+    //This is the major breakpoint where I decided to switch index.html and contanct.html to their mobile designs. contact.html did not appear to break at lower screen sizes and so a mobile version was not implemented.
+    html{
+        font-size: 70%;
+    }
+    .home__header,
+    .blog__header,
+    .contact__header{
+        height:20vh;
+    }
+    //Opted to switch flex-direction of certain layouts to column (rather than enable flex:wrap);
+    .popular__recipes,
+    .menu__categories,
+    .contact__flex__parent{
+        flex-direction: column;
+    }
+    
+    //by setting the width of these container to 100%, their images and content will take the full width of the screen on the mobile design
+    .popular__recipes__text,
+    .image__container.recipes__image,
+    .image__container.menu__image,
+    .menu__categories__text,
+    .contact__form,
+    .contact__details{
+        width: 100%;
+    }
+    //removing a previously set max-height on the section element that was causing containers to overflow
+    section{
+        max-height: none;
+    }
+
+    .popular__recipes__text{
+        margin-bottom:10%;
+    }
+    
+    //navbar is removed (text is too small and close together
+    .header__list{
+        display:none;
+    }
+    
+    //center the h1 element on each page using flexbox
+    .header__nav{
+        justify-content: center;
+        text-align: center;
+    }
+
+    //gallery images in index.html now display as 2 per row
+    .gallery__images li{
+        width: Calc(100% /  2 );
+    }
+    
+    //the hamburger placeholder is now visible and can be coded to function as a dropdown menu
+    .hamburger{
+        display: block;
+        position: absolute;
+        top:0;
+        right:0;
+        width: 30px;
+        margin-right: 15%;
+      }
+      
+    .hamburger li{
+       margin: 0px 5px 5px 5px;
+       border: 2px solid black;
+       width: 30px;
+        background-color: black;
+        flex-shrink: 0;
+    }
+
+    .contact__form{
+        padding-left: 5%;
+        margin-bottom: 10%;
+    }
+
+    //center and enlarge text of the contact details section from contact.html
+    .contact__details,
+    .contact__details p{
+        text-align: center;
+        width: 100%;
+        font-size: 0.8rem;
+    }    
+}
+
+@media (max-width: 425px){
+    html{
+        font-size: 60%;
+    }
+    .hamburger li{
+        width: 25px;
+    }
+    .underline{
+        border-bottom: 2px solid $medium__green;
+    }
+
+}
+
+@media (max-width: 365px){
+    html{
+        font-size: 50%;
+    }
+    .hamburger li{
+        width: 20px;
+    }
+
+}

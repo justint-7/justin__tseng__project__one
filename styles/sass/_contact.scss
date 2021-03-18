@@ -1,0 +1,125 @@
+//This sass file contains styling relevant to contact.html
+
+.contact__flex__parent,
+form.contact{
+    display: flex;
+}
+
+h2{
+    margin: 10% 0 5% 0;
+}
+
+.contact__flex__parent{
+    justify-content: end;
+}
+
+form.contact{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 5%;
+}
+
+.contact input[type="text"]{
+    border:none;
+    background-color: #f7f7f7;
+    padding: 1.5% 0 1.5% 3%;
+}
+.contact input[type="text"]::placeholder{
+    font-size: 0.5rem;
+    font-family: 'Lora';
+}
+
+.contact__form{
+    width: 45%;
+    flex-wrap: wrap;
+}
+
+.contact__subject,
+.contact__message{
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.contact__name,
+.contact__email{
+    width: 49%;
+    margin-bottom: 2%;
+}
+
+.contact input[type="text"].contact__message{
+    padding-bottom: 30%;
+}
+
+.contact__submit{
+    border:none;
+    background-color: transparent;
+    color: $medium__green;
+    font-size: 0.7rem;
+    font-family: 'Raleway';
+}
+
+.long__arrow__container{
+    position: relative;
+}
+
+.contact i.fa-long-arrow-right{
+    position: absolute;
+    bottom: 0;
+    color: $medium__green;
+}
+.contact__details{
+    width: 40%;
+    background-color: #f7f7f7;
+    padding-left: 2.55%;
+}
+
+.contact__details p {
+    text-align: left;
+    width: 50%;
+    color: #333333;
+    line-height: 0.75rem;
+    margin-bottom: 10%;
+}
+
+.contact__details .light{
+    color: #999999;
+    margin-bottom: 0;
+}
+
+p.hours{
+    margin: 0;
+    color: #999999
+}
+
+p.hours.light{
+    margin: 0 0 10% 0;
+    font-style: italic;
+}
+
+.hours span{
+    font-family: 'Raleway';
+    color: #333333;
+}
+
+.contact__details ul{
+    padding: 0;
+}
+
+p.toronto {
+    margin: 0;
+}
+
+.contact__details li{
+    margin:5% 0;
+}
+
+.social__container.contact{
+    border-top: 1px solid #474747;
+    margin-top: 10%;
+    padding-top: 2%;
+}
+
+
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Contact Page by Justin Tseng</title>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- link icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header starts-- identical layout to index.html. Differences are made in css.-->
+    <header class= "contact__header">
+        <!-- Navigation starts-->
+        <nav class="header__nav">
+            <h1>DELICIOUS</h1>
+            <ul class="header__list">
+                <li><a class="home" href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RECIPES</a></li>
+                <li><a href="#">NUTRITION</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li class="shop">
+                    <a href="#">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        <div class="notification">
+                            <p>2</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="search"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
+                </a></li>
+            </ul>
+            <!-- for mobile view (drop-down menu placeholder)-->
+            <ul class="hamburger">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul> 
+        </nav>
+    </header>
+    <main>
+        <!--This design is organized by using a large flex parent that holds two containers: one for the form and one for the contact details. They will be set to justify-content:row and then shifted away from the right side of the site using padding. This allows for the more "full bleed" effect of the contact details background-->
+        <div class="contact__flex__parent">
+            <!--First flex child that will contain the form. and the heading of it-->
+            <section class="contact__form">
+                <h2>DROP US A LINE</h2>
+                <!--This form is also a flex parent and it will use flexbox to organize its layout-->
+                <form class="contact">
+                    <!--Each input is paired with a label that can only be seen by screen-readers-->
+                    <label for="contact__name" class="sr-only">Your Name</label>
+                    <input type="text" class="contact__name" name="contact__name" id="contact__name" placeholder="Your Name">
+                    
+                    <label for="contact__email" class="sr-only">Your Email</label>
+                    <input type="text" class="contact__email" name="contact__email" id="contact__email" placeholder="Your Email">
+
+                    <label for="contact__subject" class="sr-only">Subject</label>
+                    <input type="text" class="contact__subject" name="contact__subject"  id="contact__subject"  placeholder="Subject">
+
+                    <label for="contact__message" class="sr-only">Message</label>
+                    <input type="text" class="contact__message" name="contact__message"  id="contact__message"  placeholder="Message">
+                    
+                    <!--This section will allow the position of the arrow icon next to the send-message button -->
+                    <div class="long__arrow__container">
+                        <label for="contact__submit" class="sr-only">Send Message</label>
+                        <input type="submit" class="contact__submit" name="contact__submit"  id="contact__submit"  placeholder="contact__submit" value="SEND MESSAGE">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>           
+                    </div>         
+                </form>
+            </section>
+            <!--The contact details section is organized using margins, padding and unordered listing-->
+            <section class="contact__details">
+                <h2>CONTACT DETAILS</h2>
+                <p>Beetroot water spinach okra water chest-nut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale.</p>
+                <h3>WORKING HOURS</h3>
+                <p class="hours"><span>MON - FRI</span> : 08:00am - 05:30pm</p>
+                <p class="light hours">Not working on Saturday and Sunday!</p>
+                <h3>CONTACT INFO</h3>
+                <ul>
+                    <li>
+                        <p class="light"> A delicious restaurant</p>
+                        <p class="light toronto"> Toronto, Ontario</p>
+                    </li>
+                    <li><p class="light">yum@food.com</p></li>
+                    <li><p class="light">+1 234 567 8910</p></li>
+                </ul>
+            </section>
+        </div>
+        <!--This section contains a large image. I decied to use an image container over using a background property since there is no content in the section otherwise and it will be easier to adjust in repsonsive design-->
+        <section class="contact__image">
+            <div class="image__container">
+                <img src="assets/contact-2.jpeg" alt="A close up photo of a dragonfruit split into two on a serving plate">
+            </div>
+        </section>        
+    </main>
+        <!--Footer begins. It is identical to one found in index.html.-->
+        <footer>
+            <div class="footer__wrapper">
+                <div class="footer__flex__parent">
+                    <div class="footer__container footer__container__1">
+                        <h4>DELICIOUS</h4>
+                        <ul>
+                            <li>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</li>
+                            <li>
+                                <p>A delicious restaurant</p>
+                                <p>Toronto Ontario</p>
+                            </li>
+                            <li>yum@food.com</li>
+                            <li>+1 234 567 8910</li>
+                        </ul>
+                    </div>
+                    <div class="footer__container footer__container__2">
+                        <h5>RECENT POSTS</h5>
+                        <ul>
+                            <li><a href="#">Beetroot water spinach okra water</a></li>
+                            <li><a href="#">Chestnut ricebean pea catsear courgette</a></li>
+                            <li><a href="#">Summer purslane spinach arugula pea</a></li>
+                            <li><a href="#">Tatsoi aubergine spring onion bush</a></li>
+                            <li><a href="#">Tamato kale radicchio turnip chicory</a></li>
+                            <li><a href="#">Salsify pea sprouts fava bean</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container footer__container__3">
+                        <h5>SUBSCRIBE NOW</h5>
+                        <p>Get all of our newest recipes immediately in your inbox!</p>
+                        <form action="submit">
+                            <label for="email" class="sr-only">Your email address</label>
+                            <input class="email" type="email" name="email" id="email" placeholder="Enter your email">
+                            <label for="submit" class="sr-only">Submit button</label>
+                            <div class="submit__container">
+                                <input type="submit" name="submit" id="submit" value="">
+                                <div class="footer__arrow__container">
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="social__container contact">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class= "copyright contact">
+                <p>Copyrights © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
+            </div>
+        </footer>
+</body>

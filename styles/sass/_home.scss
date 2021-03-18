@@ -1,0 +1,199 @@
+//This sass file contains styling relevant to home.html
+
+//flex containers found in home.html
+.popular__recipes,
+.popular__recipes__text,
+.menu__categories,
+.menu__list,
+.about,
+.about article,
+.gallery__images,
+.testimony,
+.arrow__container{
+    display: flex;
+}
+
+//containers that take up half the screen in desktop-view
+.popular__recipes__text,
+.recipes__image,
+.menu__image,
+.menu__categories__text{
+    width:50%;
+}
+
+.popular__recipes__text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+section{
+    max-height: 500px;
+}
+
+h2{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+}
+
+.underline__container{
+    position: relative;
+    padding-bottom: 5%;
+}
+
+.underline{
+    border-bottom: 4px solid $medium__green;
+    width: 20%;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: calc(50% - 10%);
+}
+
+h3{
+    font-size: 0.6rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu__categories__text{
+    background-color:#F0EAEA;
+}
+
+.menu__list{
+    flex-wrap: wrap;
+    padding:10% 10%;
+    justify-content: center;
+}
+
+.menu__list li{
+    width: 35%;
+    margin: 0 7.5%;
+    position: relative;
+}
+
+.menu__list p{
+    text-align: left;
+    line-height: 0.8rem;
+}
+
+.menu__list li i{
+    position: absolute;
+    left: -20%;
+    top: 10%;
+}
+
+.about,
+.about article{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    padding: 10%;
+    padding-top: 20%;
+    margin: 7.5% 0;
+}
+
+.about .image__container{
+    width: 40%;
+    margin-bottom:2.5%;
+    position: relative
+}
+
+.circle__logo{
+    position: absolute;
+    right:-12.5%;
+    top:-25%;
+    max-height: 50%;
+}
+
+.about .underline__container{
+    padding-bottom: 2.5%;
+}
+
+p.underline.restaurant__underline{
+    width: 20%;
+}
+
+.about article p{
+    width: 60%;
+    margin-bottom: 5%;
+}
+
+.gallery{
+    max-height: 575px;
+}
+
+.gallery__images{
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery__images li{
+    width: Calc(100% /  3 );
+}
+
+.testimony{
+    background-color:#d9e695;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 25%;
+}
+
+.testimony p{
+    color: #333333;
+    font-family: 'Lora';
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+h2{
+    margin: 0 auto;
+}
+
+.quote__container{
+    position: relative;
+}
+
+.quote__container .quotation__mark__left,
+.quote__container .quotation__mark__right{
+    position: absolute;
+    font-size: 4rem;
+    color: #F6F6F6;
+    margin: 0;
+}
+
+.quote__container .quotation__mark__left{
+    top:20%;
+    left: -10%;
+}
+
+.quote__container .quotation__mark__right{
+    bottom: 0;
+    right: -10%;
+}
+
+.arrow__container{
+    width: 10%;
+    justify-content: space-between;
+}
+
+.arrow__container .arrow__left{
+    color:#c5c7ab;
+    font-size: 1.5rem;
+}
+
+.arrow__container .arrow__right{
+    color:#F6F6F6;
+    font-size: 1.5rem;
+}
+

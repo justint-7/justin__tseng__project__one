@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 by Blog Page Justin Tseng</title>
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- link icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+     <!-- Header starts-- identical layout to index.html. Differences are made in css.-->
+     <header class= "blog__header">
+        <!-- Navigation starts-->
+        <nav class="header__nav">
+            <h1>DELICIOUS</h1>
+            <ul class="header__list">
+                <li><a class="home" href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RECIPES</a></li>
+                <li><a href="#">NUTRITION</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li class="shop">
+                    <a href="#">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                        <div class="notification">
+                            <p>2</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="search"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
+                </a></li>
+            </ul>
+            <!-- for mobile view (drop-down menu placeholder)-->
+            <ul class="hamburger">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul> 
+        </nav>
+    </header>
+    <main>
+        <!--wrapper that encompasses everything other than the footer or header -->
+        <div class="wrapper__blog">
+            <!--This first section is organized without the use of flexbox-->
+            <section class="pineapple__chicken blog">
+                <h2>PINEAPPLE CHICKEN</h2>
+                <p class="blog__details">Posted at July 11, 2018 | by Admin | in Recipes</p>
+                <p>Morbi et accumsan est, non convallis metus. Etiam faucivbus, leo et scelerisque facilisis, magna erat dictum nibh, vel congue tortor massa vitae magna. Magna erat dictum nibh, vel congue tortor vitae magna.</p>
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                <p>Gumo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennl kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohirabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jicama saslify.</p>
+            </section>
+            <!--This second section uses a large encompassing container to make margin/padding adjustments-->
+            <section class="tags__social blog">
+                <h3>TAGS: <span class="tags">Recipes, Chicken, Pineapple, Mexican</span></h3>
+                <div class="share">
+                    <h3>SHARE: </h>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </section>
+            <!--This section is organized using flexbox and two containers of different widths. One container for the image and another for the text bubble-->
+            <section class="blogger blog">
+                <div class="image__container">
+                    <img src="assets/blog-2.jpeg" alt= "Profile picture of Sally Lucas">
+                </div>
+                <div class="text__container">
+                    <h3>SALLY LUCAS</h3>
+                    <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi.</p>
+                </div>
+            </section>
+            <!--This section is organized similar to the footer-- one big flex parent holds three flex children that are also flex parents themselves. The three contained flex parents organize their content through column formatting-->
+            <section class="related__posts blog">
+                <h3>RELATED POSTS</h5>
+                <div class="flex__parent__container">
+                    <div class="flex__parent__post">
+                        <div class="image__container">
+                            <img src="assets/blog-3.jpeg" alt="A lady holding a lovely pink cake decorated with flowers and candles.">
+                        </div>
+                        <div class="text__container">
+                            <h3>HOW TO BAKE THE PERFECT CAKE</h3>
+                            <p>July 11, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+                        </div>
+                    </div>
+                    <div class="flex__parent__post">
+                        <div class="image__container">
+                            <img src="assets/blog-4.jpeg" alt="3 Cupcakes topped with green decorative paste and a flower">
+                        </div>
+                        <div class="text__container">
+                            <h3>FLORAL CUPCAKES</h3>
+                            <p>July 19, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+                        </div>
+                    </div>
+                    <div class="flex__parent__post">
+                        <div class="image__container">
+                            <img src="assets/blog-5.jpeg" alt="A colorful salad with onions, diced grreens and small orange slices">
+                        </div>
+                        <div class="text__container">
+                            <h3>SINGLE POST WITH IMAGE</h3>
+                            <p>July 22, 2018 | by <span>Admin</span> | in <span>Recipes</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--This section is organized using flexbox; two flex parents are used (one for each parent)and each consist of an image container and a text container.-->
+            <section class="section__comments">
+                <h3>02 COMMENTS</h3>
+                <div class="comment">
+                    <div class="image__container">
+                        <img src="assets/blog-6.jpeg" alt="Profile picture of Lucatony Avaro.">
+                    </div>
+                    <div class="text__container">
+                        <p><span>Lucatony Avaro</span> - Web Developer</p>
+                        <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot sqush brussels sprout chard.</p>
+                        <p class="time">Jul 17,2015 at 15 hours ago</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="image__container">
+                        <img src="assets/blog-7.jpeg" alt="Profile picture of Brian Hudson.">
+                    </div>
+                    <div class="text__container">
+                        <p><span>Brian Hudson</span> - Web Developer</p>
+                        <p>Pea horseradish azuki bean lettuce avocado asparagus okra. Kohirabi radish okra azuki bean corn fava bean mustard tigernut jicama green bean celtuce collard greens avocado quandong fennel gumbo black-eyed pea. Grape silver beet watercress potato tigernut corn groundnut.</p>
+                        <p class="time">Jul 17,2015 at 15 hours ago</p>
+                    </div>
+                </div>
+            </section>
+            <!--This form uses flexbox and calc to make each component take up a certain amount of width -->
+            <section class="blog__comment__form">
+                <h3>LEAVE A COMMENT</h3>
+                <p>Your email address will not be published. Required fields are marked *</p>
+                <form class= "blog__form" action="submit">
+                    <div class= blog__form__flex__parent>
+                        <!--Each input is paired with a label that is hidden to non-screen readers-->
+                        <label for="text__blog" class="sr-only">Your Name</label>
+                        <input type="text" class="text__blog"  name="text__blog" id="email__blog" placeholder="Name *">
+
+                        <label for="email__blog" class="sr-only">Your email address</label>
+                        <input type="email" class="email__blog"  name="email__blog" id="email__blog" placeholder="Email *">
+
+                        <label for="website" class="sr-only">Your email address</label>
+                        <input type="text" class="text__blog website"  name="website" id="website" placeholder="Your Website">
+                    </div>
+                    <label for="comment__blog" class="sr-only">Comment</label>
+                    <input type="text" class="comment__blog"  name="comment__blog" id="comment__blog" placeholder="Comment">
+
+                    <label for="submit__blog" class="sr-only">SUBMIT COMMENT</label>
+                    <input type="submit" class="submit__blog button"  name="submit__blog" id="submit__blog" value="SUBMIT COMMENT">
+                </form>
+            </section>            
+        </div>
+    </main>
+        <!--Footer begins. It is identical to one found in index.html except for a small adjustment in the 3rd flex container.-->
+        <footer>
+        <div class="footer__wrapper">
+            <div class="footer__flex__parent">
+                <div class="footer__container footer__container__1">
+                    <h4>DELICIOUS</h4>
+                    <ul>
+                        <li>Soko radicchio bunya nuts gram dulse silver beet parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</li>
+                        <li>
+                            <p>A delicious restaurant</p>
+                            <p>Toronto Ontario</p>
+                        </li>
+                        <li>yum@food.com</li>
+                        <li>+1 234 567 8910</li>
+                    </ul>
+                </div>
+                <div class="footer__container footer__container__2">
+                    <h5>RECENT POSTS</h5>
+                    <ul>
+                        <li><a href="#">Beetroot water spinach okra water</a></li>
+                        <li><a href="#">Chestnut ricebean pea catsear courgette</a></li>
+                        <li><a href="#">Summer purslane spinach arugula pea</a></li>
+                        <li><a href="#">Tatsoi aubergine spring onion bush</a></li>
+                        <li><a href="#">Tamato kale radicchio turnip chicory</a></li>
+                        <li><a href="#">Salsify pea sprouts fava bean</a></li>
+                    </ul>
+                </div>
+                <div class="footer__container footer__container__3">
+                    <h5 class="blog">SUBSCRIBE NOW</h5>
+                    <div class="footer__flex__submit">
+                        <form action="submit" class="blog">
+                            <label for="email" class="sr-only">Your email address</label>
+                            <input class="email" type="email" name="email" id="email" placeholder="Enter your email">
+                            <label for="submit" class="sr-only">Submit button</label>
+                            <div class="submit__container">
+                                <input type="submit" name="submit" id="submit" value="">
+                                <div class="footer__arrow__container">
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </form>
+                        <!--This blank ul is used to create the line found in the design-->
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright blog">
+            <p>Copyrights © 2015 by <span>POLAR</span>. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
