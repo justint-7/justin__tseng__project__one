@@ -789,7 +789,7 @@ form,
 }
 
 .blog p {
-  color: #333333;
+  color: #6e6e6e;
 }
 
 .blog__details,
@@ -802,12 +802,12 @@ form,
 p.blog__details {
   color: #2E2E2E;
   line-height: 0.75rem;
-  margin-bottom: 2.5%;
+  margin: 0 0 2.5% 0;
 }
 
 .pineapple__chicken h2 {
   line-height: 1.5rem;
-  margin-top: 10%;
+  margin: 10% 0 0 0;
 }
 
 section.blog {
