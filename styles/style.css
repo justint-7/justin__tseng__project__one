@@ -761,14 +761,22 @@ h2 {
           justify-content: space-between;
 }
 
-.arrow__container .arrow__left {
+.arrow__container .arrow {
   color: #c5c7ab;
   font-size: 1.5rem;
 }
 
-.arrow__container .arrow__right {
+.arrow__container .active {
   color: #F6F6F6;
   font-size: 1.5rem;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 .wrapper__blog {
